@@ -1,7 +1,7 @@
 # Proyek Akhir Semester Ganjil — Pengelolaan Kegiatan Kelas
 
-Kelas: XI RPL 2  
-Mata pelajaran: Pemrograman Web  
+Kelas: XI RPL 2
+Mata pelajaran: Pemrograman Web
 Tahun pelajaran: 2026/2027
 
 ## Identitas Siswa
