@@ -136,23 +136,32 @@ function tambahKegiatan(daftar, nama) {
   if (namaBersih == ""); {
     return false;
   }
-
-  // TODO JS-04: Gunakan includes() untuk menolak nama duplikat.
+    // TODO JS-04: Gunakan includes() untuk menolak nama duplikat.
   // Jika kegiatan sudah ada, gunakan return false.
+  if (daftar.inludes(namaDaftar)); {
+    return false;
+    }
 
-  // TODO JS-05: Gunakan push() untuk menambahkan namaBersih.
+   // TODO JS-05: Gunakan push() untuk menambahkan namaBersih.
   // Jika penambahan berhasil, gunakan return true.
+  daftar.push(namaBersih); {
+    return true;
+  }
+
 
   return false; // SEMENTARA: ganti/hapus setelah TODO JS-03 s.d. JS-05 selesai
 }
 
 // TODO JS-06 — Pencarian kegiatan
 function cariKegiatan(daftar, nama) {
+  const namaBersih = nama.trim();
+  const indeks = daftar.indexOF(namaBersih);
+
   // TODO JS-06: Hilangkan spasi awal/akhir menggunakan trim().
   // Cari posisi kegiatan dengan indexOf(), lalu kembalikan indeksnya.
   // Jika tidak ditemukan, indexOf() akan menghasilkan -1.
 
-  return -1; // SEMENTARA: ganti setelah TODO JS-06 selesai
+  return indeks; // SEMENTARA: ganti setelah TODO JS-06 selesai
 }
 
 // TODO JS-07 dan JS-08 — Penghapusan kegiatan
