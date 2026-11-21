@@ -29,7 +29,7 @@ function tampilkanKegiatan(daftar) {
   for (let i = 0; i < 0; i++) {
     // TODO JS-02:
     // Ganti string kosong dengan elemen Array 'daftar' pada indeks i.
-    const namaKegiatan = "";
+    const namaKegiatan = "daftar[i]";
 
     // Disediakan guru: pembentukan dan penampilan elemen HTML.
     const item = document.createElement("li");
@@ -131,7 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // TODO JS-03, JS-04, JS-05 — Validasi dan penambahan kegiatan
 function tambahKegiatan(daftar, nama) {
   // TODO JS-03: Simpan nama yang sudah di-trim ke variabel namaBersih.
-  // Jika namaBersih kosong, gunakan return false.
+ // Jika namaBersih kosong, gunakan return false.
+  const namaBersih = namaBersih.trim();
+  if (namaBersih == ""); {
+    return false;
+  }
 
   // TODO JS-04: Gunakan includes() untuk menolak nama duplikat.
   // Jika kegiatan sudah ada, gunakan return false.
