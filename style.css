@@ -16,8 +16,8 @@
 body {
   font-family: Arial, sans-serif;
   color:deeppink;
-  background-color: aliceblue;
-  margin: 0;
+  background-color: palegoldenrod;
+  margin: auto;
   padding: 20px;
 }
 
@@ -25,53 +25,106 @@ body {
    border dan border-radius seperlunya. */
 .container {
   max-width: 800px;
-  margin: 30 auto;
+  margin: 30px auto;
   padding: 25px;
-  border: 1px seashell;
+  border: 1px solid black;
   border-radius: 12px;
 
 
 }
 
 .kepala-halaman {
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid goldenrod;
 }
 
 .panel {
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 /* TODO CSS-03: Atur ukuran input, padding, jarak antar elemen,
    warna tombol, dan tampilan yang konsisten. */
 .form-baris {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
 }
 
 .form-baris label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
 .form-baris input {
+  padding: 10px 12px;
+  border: 1px solid #161717;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .aksi {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .aksi button {
+  padding: 10px 16px;
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
 }
 
 /* TODO CSS-04: Rapikan daftar kegiatan, jumlah kegiatan, dan pesan
    status. Bedakan tampilan status berhasil dan gagal. */
 #daftarKegiatan {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 16px;
 }
 
 #daftarKegiatan li {
+  background-color: whitesmoke;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 4px solid pink;
 }
 
 .ringkasan {
+  font-weight: bold;
+  margin-top: 12px;
+  color: #333333
 }
 
 #pesanStatus {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 500;
 }
 
 #pesanStatus.berhasil {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
 }
 
 #pesanStatus.gagal {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
 }
