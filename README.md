@@ -10,6 +10,17 @@ Tahun pelajaran: 2026/2027
 - NIS: 4434
 - Kelas: XI RPL 2
 
+## judul
+pengelolaan kegiatan kelas
+
+# fitur
+tampil,tambah,cari
+
+## teknologi
+html,css,javascript
+
+## cara menjalankan aplikasi secara offline
+membuka indek html di broser
 ## Deskripsi Aplikasi
 
 Aplikasi pengelolaan kegiatan kelas menggunakan HTML, CSS, dan JavaScript.
